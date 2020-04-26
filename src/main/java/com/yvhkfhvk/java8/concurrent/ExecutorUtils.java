@@ -50,4 +50,15 @@ public class ExecutorUtils {
         }
 
     }
+
+    /**
+     * 按秒睡眠
+     * @param second
+     */
+    public static void sleep(long second){
+        try {
+            Thread.sleep(second * 1000);
+        } catch (InterruptedException e) {
+        }
+    }
 }
